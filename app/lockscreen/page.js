@@ -13,7 +13,9 @@ const Lock = (props) => {
         objectFit="cover"
         objectPosition="center"
       />
-      <h1 className={styles.lockText}>Hello</h1>
+      <div>
+        <h1 className={styles.lockText}>Hello</h1>
+      </div>
     </div>
   );
 };
