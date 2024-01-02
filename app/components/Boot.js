@@ -23,7 +23,7 @@ const Boot = (props) => {
   // to navigate when reaches 100
   useEffect(() => {
     if (progress == 100) {
-      router.push("/lock");
+      router.push("/lockscreen");
     }
   }, [progress]);
 

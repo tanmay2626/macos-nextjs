@@ -1,0 +1,8 @@
+
+.lockBg{
+    z-index: -1;
+}
+
+.lockText{
+    z-index: 1;
+}
