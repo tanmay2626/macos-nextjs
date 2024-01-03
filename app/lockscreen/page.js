@@ -1,8 +1,34 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useRouter } from "next/navigation";
 
 const Lock = (props) => {
+  const [username, setUsername] = useState("");
+
+  const router = useRouter();
+
+  const handleInput = (e) => {
+    setUsername(e.target.value);
+  };
+
+  useEffect(() => {
+    const handleEnter = (e) => {
+      if (e.key == "Enter") {
+        localStorage.setItem("username", username);
+        router.push("/home");
+      }
+    };
+
+    window.addEventListener("keypress", handleEnter);
+
+    return () => {
+      window.removeEventListener("keypress", handleEnter);
+    };
+  }, [username]);
+
   return (
     <div className={styles.main}>
       <Image
@@ -24,7 +50,12 @@ const Lock = (props) => {
         <h3>New User</h3>
         <div className={styles.authCredentials}>
           <div className={styles.authName}>
-            <input type="text" placeholder="Enter Name" />
+            <input
+              name="username"
+              type="text"
+              placeholder="Enter Name"
+              onChange={handleInput}
+            />
           </div>
 
           <div className={styles.authHelp}>
