@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    text-align: center;
+    min-height: 100vh;
 }
 
 .lockBg{
@@ -14,44 +15,46 @@
     z-index: 1;
 }
 
+.dateComp{
+    margin-top: 3rem;
+}
+
+.currTime{
+    font-size: 7rem;
+    opacity: 0.8;
+}
+
+
 .message{
-    margin-top: 1rem;
+    margin-top: 0.6rem;
     font-weight: 500;
 }
 
 .auth{
-    text-align: center;
-
+    font-size: 0.9rem;
+    margin-top: auto;
+    margin-bottom: 50px;
 }
 
 .authCredentials{
     display: flex;
-    margin-top: 1rem;
+    margin-top: 0.6rem;
 }
 
 .authNameWrap{
     display: flex;
-    flex: 0.6;
 }
-
-.authHelp{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-}
-
 
 .authName > input{
     background-color: white;
     border: none;
-    opacity: 0.25;
+    opacity: 0.45;
     border-radius: 30px;
     font-size: 1rem;
-    padding: 8px 20px;
+    padding: 6px 18px;
     color: black;
     font-weight: 600;
     outline: none;
-    width: 200px;
+    width: 180px;
 }
 
