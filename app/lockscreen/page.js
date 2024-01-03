@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 
 const Lock = (props) => {
   return (
-    <div style={{ backgroundColor: `url("../../wallpaper1.jpg")` }}>
+    <div className={styles.main}>
       <Image
         className={styles.lockBg}
         alt="wallpaper"
@@ -13,8 +13,32 @@ const Lock = (props) => {
         objectFit="cover"
         objectPosition="center"
       />
-      <div>
-        <h1 className={styles.lockText}>Hello</h1>
+      <div className={styles.auth}>
+        <Image
+          src={"/guest.png"}
+          width={200}
+          height={170}
+          priority
+          alt="logo"
+        />
+        <h3>New User</h3>
+        <div className={styles.authCredentials}>
+          <div className={styles.authNameWrap}>
+            <div className={styles.authName}>
+              <input type="text" placeholder="Enter Name" />
+            </div>
+          </div>
+
+          <div className={styles.authHelp}>
+            <Image
+              src={"/help.png"}
+              width={30}
+              height={30}
+              priority
+              alt="logo"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

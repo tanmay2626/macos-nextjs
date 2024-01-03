@@ -38,7 +38,7 @@ const Navigation = (props) => {
         display: "flex",
         justifyContent: "flex-end",
         padding: "5px 10px",
-        gap: 25,
+        gap: 15,
       }}
     >
       <Image

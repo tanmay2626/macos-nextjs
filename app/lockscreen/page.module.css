@@ -1,3 +1,10 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
 
 .lockBg{
     z-index: -1;
@@ -6,3 +13,44 @@
 .lockText{
     z-index: 1;
 }
+
+.auth{
+    text-align: center;
+}
+
+.authCredentials{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.authNameWrap{
+    display: flex;
+    flex: 0.6;
+}
+
+.authHelp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+
+.authName{
+    background-color: white;
+    opacity: 0.25;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.authName > input{
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    padding: 8px 20px;
+    color: black;
+    font-weight: 600;
+    outline: none;
+    width: 200px;
+}
+
