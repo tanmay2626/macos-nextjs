@@ -23,10 +23,8 @@ const Lock = (props) => {
         />
         <h3>New User</h3>
         <div className={styles.authCredentials}>
-          <div className={styles.authNameWrap}>
-            <div className={styles.authName}>
-              <input type="text" placeholder="Enter Name" />
-            </div>
+          <div className={styles.authName}>
+            <input type="text" placeholder="Enter Name" />
           </div>
 
           <div className={styles.authHelp}>
@@ -39,6 +37,9 @@ const Lock = (props) => {
             />
           </div>
         </div>
+        <p className={styles.message}>
+          Your password is required <br /> to enable Touch ID
+        </p>
       </div>
     </div>
   );
