@@ -1,0 +1,7 @@
+.homeBg{
+    z-index: -1;
+}
+
+.homeText{
+    z-index: 1;
+}
